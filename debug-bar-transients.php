@@ -1,12 +1,13 @@
 <?php
 /**
  * Plugin Name: Debug Bar Transients
- * Version: 0.4
+ * Version:     0.4
  * Description: Adds information about the WordPress Transient API to Debug Bar.
- * Author: Dominik Schilling
- * Author URI: http://wphelper.de/
- * Plugin URI: http://wpgrafie.de/wp-plugins/debug-bar-transient/en/
+ * Author:      Dominik Schilling
+ * Author URI:  http://wphelper.de/
+ * Plugin URI:  http://wpgrafie.de/wp-plugins/debug-bar-transient/en/
  *
+ * Depends:     Debug Bar
  * Text Domain: ds-debug-bar-transients
  * Domain Path: /lang
  *

@@ -65,6 +65,9 @@ To upload the plugin through WordPress, instead of FTP:
 
 == Changelog ==
 
+= Trunk =
+* Fix compatibility with the [Plugin Dependencies](http://wordpress.org/plugins/plugin-dependencies/) plugin
+
 = 0.4.0 =
 * Enhancement: Totals per transient type at the top of the page - props [Jrf](http://profiles.wordpress.org/jrf)
 * Bug fix: duplicate nonce - props [Jrf](http://profiles.wordpress.org/jrf)
