@@ -101,18 +101,27 @@ class DS_Debug_Bar_Transients extends Debug_Bar_Panel {
 		add_action( 'wp_enqueue_scripts', array( $this, 'print_scripts' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'print_scripts' ) );
 
-		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+		add_action( 'init', array( $this, 'load_textdomain' ) );
 	}
 
 	/**
 	 * Load the textdomain.
+	 *
+	 * Compatible with use of the plugin in the must-use plugins directory.
 	 */
-	public function load_textdomain() {
-		load_plugin_textdomain(
-			'ds-debug-bar-transients',
-			false,
-			dirname( plugin_basename( __FILE__ ) ) . '/lang/'
-		);
+	protected function load_textdomain() {
+		$domain = 'ds-debug-bar-transients';
+
+		if ( is_textdomain_loaded( $domain ) ) {
+			return;
+		}
+
+		$lang_path = dirname( plugin_basename( __FILE__ ) ) . '/lang';
+		if ( false === strpos( __FILE__, basename( WPMU_PLUGIN_DIR ) ) ) {
+			load_plugin_textdomain( $domain, false, $lang_path );
+		} else {
+			load_muplugin_textdomain( $domain, $lang_path );
+		}
 	}
 
 	/**

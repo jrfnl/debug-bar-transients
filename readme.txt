@@ -67,6 +67,7 @@ To upload the plugin through WordPress, instead of FTP:
 
 = Trunk =
 * Enhancement: Updated core transient names (up to WP 4.0)
+* Make loading of text-domain compatible with use of the plugin in the `must-use` plugins directory.
 
 = 0.4.0 =
 * Enhancement: Totals per transient type at the top of the page - props [Jrf](http://profiles.wordpress.org/jrf)
