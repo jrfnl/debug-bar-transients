@@ -12,7 +12,7 @@ Debug Bar Transients adds a new panel to Debug Bar that displays information abo
 
 == Description ==
 
-Debug Bar Transients adds information about WordPress Transients to a new panel in the Debug Bar. This plugin is an extension for [Debug Bar](http://wordpress.org/extend/plugins/debug-bar/) and thus is dependent upon Debug Bar being installed for it to work properly.
+Debug Bar Transients adds information about WordPress Transients to a new panel in the Debug Bar. This plugin is an extension for [Debug Bar](https://wordpress.org/plugins/debug-bar/) and thus is dependent upon Debug Bar being installed for it to work properly.
 
 Once installed, you will have access to the following information:
 
@@ -25,7 +25,7 @@ Once installed, you will have access to the following information:
 
 **Sounds pretty good? Install now!**
 
-*This plugin is inspired by the [Debug Bar Cron](http://wordpress.org/extend/plugins/debug-bar-cron/) plugin.*
+*This plugin is inspired by the [Debug Bar Cron](https://wordpress.org/plugins/debug-bar-cron/) plugin.*
 
 = Feedback =
 If you want, you can drop me a line @[ocean90](http://twitter.com/ocean90) on Twitter or @[Dominik Schilling](https://plus.google.com/101675293278434581718/) on Google+.
